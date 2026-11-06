@@ -40,11 +40,11 @@ ru,Стойка ресепшен,reception
 en,Security staff,security_staff
 ru,Охрана,security_staff
 en,CCTV,cctv
+en,Video surveillance,cctv
 ru,Видеонаблюдение,cctv
+ru,Камеры наблюдения,cctv
 en,Controlled entry,controlled_entry
-en,Video surveillance,controlled_entry
 ru,Контроль доступа,controlled_entry
-ru,Камеры наблюдения,controlled_entry
 en,Backup power,backup_power
 ru,Резервное электропитание,backup_power
 en,Solar electricity,solar_generation

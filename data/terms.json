@@ -180,7 +180,13 @@
     "en": "CCTV",
     "ru": "Видеонаблюдение",
     "definition": "Cameras described as monitoring part of the site.",
-    "note": "Does not establish complete coverage, retention or live monitoring."
+    "note": "Does not establish complete coverage, retention or live monitoring.",
+    "en_aliases": [
+      "Video surveillance"
+    ],
+    "ru_aliases": [
+      "Камеры наблюдения"
+    ]
   },
   {
     "id": "controlled_entry",
@@ -189,13 +195,7 @@
     "en": "Controlled entry",
     "ru": "Контроль доступа",
     "definition": "An explicit access-control mechanism for entry.",
-    "note": "Specify card, intercom or other mechanism if known.",
-    "en_aliases": [
-      "Video surveillance"
-    ],
-    "ru_aliases": [
-      "Камеры наблюдения"
-    ]
+    "note": "Specify card, intercom or other mechanism if known."
   },
   {
     "id": "backup_power",

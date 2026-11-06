@@ -87,12 +87,12 @@ INSERT INTO aliases (language,alias_text,amenity_id) VALUES ('en', 'Security sta
 INSERT INTO aliases (language,alias_text,amenity_id) VALUES ('ru', 'Охрана', 'security_staff');
 INSERT INTO amenities (amenity_id,category,default_scope,label_en,label_ru,definition,review_note) VALUES ('cctv', 'security', 'site', 'CCTV', 'Видеонаблюдение', 'Cameras described as monitoring part of the site.', 'Does not establish complete coverage, retention or live monitoring.');
 INSERT INTO aliases (language,alias_text,amenity_id) VALUES ('en', 'CCTV', 'cctv');
+INSERT INTO aliases (language,alias_text,amenity_id) VALUES ('en', 'Video surveillance', 'cctv');
 INSERT INTO aliases (language,alias_text,amenity_id) VALUES ('ru', 'Видеонаблюдение', 'cctv');
+INSERT INTO aliases (language,alias_text,amenity_id) VALUES ('ru', 'Камеры наблюдения', 'cctv');
 INSERT INTO amenities (amenity_id,category,default_scope,label_en,label_ru,definition,review_note) VALUES ('controlled_entry', 'security', 'building', 'Controlled entry', 'Контроль доступа', 'An explicit access-control mechanism for entry.', 'Specify card, intercom or other mechanism if known.');
 INSERT INTO aliases (language,alias_text,amenity_id) VALUES ('en', 'Controlled entry', 'controlled_entry');
-INSERT INTO aliases (language,alias_text,amenity_id) VALUES ('en', 'Video surveillance', 'controlled_entry');
 INSERT INTO aliases (language,alias_text,amenity_id) VALUES ('ru', 'Контроль доступа', 'controlled_entry');
-INSERT INTO aliases (language,alias_text,amenity_id) VALUES ('ru', 'Камеры наблюдения', 'controlled_entry');
 INSERT INTO amenities (amenity_id,category,default_scope,label_en,label_ru,definition,review_note) VALUES ('backup_power', 'utilities', 'building', 'Backup power', 'Резервное электропитание', 'An alternative power supply for some circuits.', 'Record covered circuits and duration; do not promise whole-unit continuity.');
 INSERT INTO aliases (language,alias_text,amenity_id) VALUES ('en', 'Backup power', 'backup_power');
 INSERT INTO aliases (language,alias_text,amenity_id) VALUES ('ru', 'Резервное электропитание', 'backup_power');

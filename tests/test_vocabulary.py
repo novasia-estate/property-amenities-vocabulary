@@ -8,6 +8,9 @@ class VocabularyTests(unittest.TestCase):
         terms=json.loads((ROOT/'data/terms.json').read_text(encoding='utf8'));self.assertEqual(self.db.execute('SELECT COUNT(*) FROM amenities').fetchone()[0],len(terms))
     def test_bilingual_labels(self):self.assertEqual(self.db.execute("SELECT COUNT(*) FROM amenities WHERE label_en='' OR label_ru=''").fetchone()[0],0)
     def test_alias_integrity(self):self.assertEqual(self.db.execute('SELECT COUNT(*) FROM aliases a LEFT JOIN amenities b ON a.amenity_id=b.amenity_id WHERE b.amenity_id IS NULL').fetchone()[0],0)
+    def test_surveillance_aliases_mean_cctv(self):
+        for lang,alias in [('en','Video surveillance'),('ru','Камеры наблюдения')]:
+            self.assertEqual(self.db.execute('SELECT amenity_id FROM aliases WHERE language=? AND alias_text=?',(lang,alias)).fetchone()[0],'cctv')
     def test_bad_scope(self):
         with self.assertRaises(sqlite3.IntegrityError):self.db.execute("UPDATE amenities SET default_scope='anywhere'")
     def test_unknown_amenity(self):
