@@ -1,0 +1,9 @@
+To the extent possible under law, NovAsia Estate has waived all copyright and
+related or neighboring rights to the vocabulary and synthetic data in data/
+and sql/synthetic-example.sql under CC0 1.0 Universal.
+
+https://creativecommons.org/publicdomain/zero/1.0/
+
+The data is supplied without warranty. It is an authored editorial vocabulary,
+not an independent market dataset or a statement about real properties.
+Software remains under the MIT License in LICENSE.

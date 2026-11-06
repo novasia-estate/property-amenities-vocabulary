@@ -20,7 +20,7 @@ def build():
             for alias in [t[lang],*t.get(lang+'_aliases',[])]:
                 lines.append('INSERT INTO aliases (language,alias_text,amenity_id) VALUES ('+', '.join(q(s) for s in (lang,alias,t['id']))+');')
     sql='\n'.join(lines)+'\n'
-    (ROOT/'sql/vocabulary.sql').write_text(sql,encoding='utf8')
+    (ROOT/'sql/vocabulary.sql').write_text(sql,encoding='utf8',newline='\n')
     for name,fields,rows in [('amenities',['amenity_id','category','default_scope','label_en','label_ru','definition','review_note'],[[t[k] for k in ['id','category','scope','en','ru','definition','note']] for t in terms]),('aliases',['language','alias_text','amenity_id'],[[lang,alias,t['id']] for t in terms for lang in ('en','ru') for alias in [t[lang],*t.get(lang+'_aliases',[])]])]:
         with (ROOT/'data'/f'{name}.csv').open('w',encoding='utf8',newline='') as f:
             w=csv.writer(f,lineterminator='\n');w.writerow(fields);w.writerows(rows)
