@@ -2,6 +2,8 @@
 
 A small, editable bilingual RU/EN dictionary and SQL review model for property catalogues. It prevents a pool mentioned in a brochure, a planned pool and a currently shared pool from being flattened into one misleading yes/no field.
 
+[Explore the live DoltHub database](https://www.dolthub.com/repositories/novasia/property-amenities-vocabulary) or read the [database quickstart](docs/native-database.md). The native database includes all three tables, four synthetic claims and four named review views.
+
 The authored vocabulary provides stable amenity codes, labels, explicit aliases, default scope, definitions and practical review notes. The claim table separately records **scope**, **present / absent / planned / unknown**, **access**, an evidence reference and an observation date. An omitted claim means **unknown**, not absent.
 
 This is a proposed editorial data model, not an industry standard, a facility certification, a market dataset or a legal accessibility specification. Definitions describe how these fields are used in this project. No real buildings, prices or facilities are asserted. Review local terms and the actual source before using a filter publicly.
@@ -13,6 +15,7 @@ This is a proposed editorial data model, not an industry standard, a facility ce
 - `sql/schema.sql`: MySQL/Dolt and SQLite table definitions.
 - `sql/vocabulary.sql`: schema and complete dictionary inserts.
 - `sql/review.sql`: contradictions, missing provenance, scope mismatch and planned-facility queues.
+- `sql/views.sql`: the four named views published in the native database.
 - `sql/synthetic-example.sql`: deliberately conflicting, invented claims.
 - `tools/build.py`: validates aliases and rebuilds SQL/CSV.
 - `tests/`: data contracts and executable review scenarios.

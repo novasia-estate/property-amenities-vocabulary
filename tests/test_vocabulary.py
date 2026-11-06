@@ -23,6 +23,12 @@ class VocabularyTests(unittest.TestCase):
         self.assertEqual([len(r) for r in results],[1,1,1,1])
     def test_deterministic(self):
         before=(ROOT/'sql/vocabulary.sql').read_bytes();build();self.assertEqual((ROOT/'sql/vocabulary.sql').read_bytes(),before)
+    def test_native_views(self):
+        self.db.executescript((ROOT/'sql/synthetic-example.sql').read_text())
+        self.db.executescript((ROOT/'sql/views.sql').read_text())
+        self.assertEqual(self.db.execute('SELECT * FROM review_conflicting_claims').fetchall(),[('SYNTHETIC-A','pool','site',2)])
+        for name,expected in [('review_missing_provenance','DEMO-3'),('review_scope_candidates','DEMO-4'),('review_planned_facilities','DEMO-1')]:
+            self.assertEqual(self.db.execute('SELECT claim_id FROM '+name).fetchall(),[(expected,)])
     def test_csv(self):
         with (ROOT/'data/amenities.csv').open(encoding='utf8') as f:rows=list(csv.DictReader(f))
         self.assertEqual(len(rows),self.db.execute('SELECT COUNT(*) FROM amenities').fetchone()[0])
