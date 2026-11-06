@@ -1,0 +1,353 @@
+[
+  {
+    "id": "pool",
+    "category": "leisure",
+    "scope": "site",
+    "en": "Swimming pool",
+    "ru": "Бассейн",
+    "definition": "Pool intended for swimming or recreation.",
+    "note": "Record completion, shared/private access and any fees; do not infer size."
+  },
+  {
+    "id": "children_pool",
+    "category": "leisure",
+    "scope": "site",
+    "en": "Children's pool",
+    "ru": "Детский бассейн",
+    "definition": "Pool explicitly described as intended for children.",
+    "note": "Does not establish depth, supervision or safety certification."
+  },
+  {
+    "id": "gym",
+    "category": "leisure",
+    "scope": "building",
+    "en": "Gym",
+    "ru": "Тренажёрный зал",
+    "definition": "Dedicated exercise room or fitness facility.",
+    "note": "Record equipment and paid access separately if known.",
+    "en_aliases": [
+      "Fitness room"
+    ],
+    "ru_aliases": [
+      "Фитнес-зал"
+    ]
+  },
+  {
+    "id": "sauna",
+    "category": "leisure",
+    "scope": "building",
+    "en": "Sauna",
+    "ru": "Сауна",
+    "definition": "Dry-heat bathing facility.",
+    "note": "Do not map a steam room to a sauna automatically."
+  },
+  {
+    "id": "steam_room",
+    "category": "leisure",
+    "scope": "building",
+    "en": "Steam room",
+    "ru": "Паровая комната",
+    "definition": "Humid-heat bathing facility.",
+    "note": "Separate from sauna; verify operating status."
+  },
+  {
+    "id": "playground",
+    "category": "leisure",
+    "scope": "site",
+    "en": "Playground",
+    "ru": "Детская площадка",
+    "definition": "Dedicated outdoor children's play space.",
+    "note": "Does not imply supervised childcare."
+  },
+  {
+    "id": "playroom",
+    "category": "leisure",
+    "scope": "building",
+    "en": "Children's playroom",
+    "ru": "Детская игровая комната",
+    "definition": "Dedicated indoor children's play space.",
+    "note": "Childcare and supervised services require separate claims."
+  },
+  {
+    "id": "coworking",
+    "category": "work",
+    "scope": "building",
+    "en": "Coworking space",
+    "ru": "Коворкинг",
+    "definition": "Shared space explicitly offered for work.",
+    "note": "Does not imply bookable private offices or included internet."
+  },
+  {
+    "id": "meeting_room",
+    "category": "work",
+    "scope": "building",
+    "en": "Meeting room",
+    "ru": "Переговорная",
+    "definition": "Room offered for meetings.",
+    "note": "Record booking requirements and charges."
+  },
+  {
+    "id": "parking",
+    "category": "mobility",
+    "scope": "site",
+    "en": "Parking",
+    "ru": "Парковка",
+    "definition": "Parking spaces available at the property site.",
+    "note": "Does not imply an assigned bay, covered parking or free use."
+  },
+  {
+    "id": "covered_parking",
+    "category": "mobility",
+    "scope": "site",
+    "en": "Covered parking",
+    "ru": "Крытая парковка",
+    "definition": "Parking spaces protected by a roof or structure.",
+    "note": "Do not infer enclosed or assigned parking."
+  },
+  {
+    "id": "ev_charging",
+    "category": "mobility",
+    "scope": "site",
+    "en": "EV charging",
+    "ru": "Зарядка электромобилей",
+    "definition": "Equipment explicitly intended to charge electric vehicles.",
+    "note": "Verify connector, capacity, operation and fees separately."
+  },
+  {
+    "id": "bicycle_storage",
+    "category": "mobility",
+    "scope": "building",
+    "en": "Bicycle storage",
+    "ru": "Хранение велосипедов",
+    "definition": "Designated space for keeping bicycles.",
+    "note": "Does not imply a locked room or theft insurance."
+  },
+  {
+    "id": "lift",
+    "category": "access",
+    "scope": "building",
+    "en": "Lift",
+    "ru": "Лифт",
+    "definition": "Passenger lift serving the building.",
+    "note": "A lift alone does not prove a continuous step-free route.",
+    "en_aliases": [
+      "Elevator"
+    ],
+    "ru_aliases": [
+      "Пассажирский лифт"
+    ]
+  },
+  {
+    "id": "step_free_entrance",
+    "category": "access",
+    "scope": "building",
+    "en": "Step-free entrance",
+    "ru": "Вход без ступеней",
+    "definition": "An explicitly described entrance route without steps.",
+    "note": "Not an accessibility certification; verify slopes, widths and route continuity."
+  },
+  {
+    "id": "concierge",
+    "category": "services",
+    "scope": "service",
+    "en": "Concierge",
+    "ru": "Консьерж",
+    "definition": "Staffed assistance described as concierge service.",
+    "note": "Do not infer 24-hour coverage or included personal services."
+  },
+  {
+    "id": "reception",
+    "category": "services",
+    "scope": "building",
+    "en": "Reception desk",
+    "ru": "Стойка ресепшен",
+    "definition": "A staffed reception point.",
+    "note": "Record working hours; reception is not equivalent to concierge."
+  },
+  {
+    "id": "security_staff",
+    "category": "security",
+    "scope": "service",
+    "en": "Security staff",
+    "ru": "Охрана",
+    "definition": "On-site staff explicitly assigned a security role.",
+    "note": "Do not infer hours, response time or a safety guarantee."
+  },
+  {
+    "id": "cctv",
+    "category": "security",
+    "scope": "site",
+    "en": "CCTV",
+    "ru": "Видеонаблюдение",
+    "definition": "Cameras described as monitoring part of the site.",
+    "note": "Does not establish complete coverage, retention or live monitoring."
+  },
+  {
+    "id": "controlled_entry",
+    "category": "security",
+    "scope": "building",
+    "en": "Controlled entry",
+    "ru": "Контроль доступа",
+    "definition": "An explicit access-control mechanism for entry.",
+    "note": "Specify card, intercom or other mechanism if known.",
+    "en_aliases": [
+      "Video surveillance"
+    ],
+    "ru_aliases": [
+      "Камеры наблюдения"
+    ]
+  },
+  {
+    "id": "backup_power",
+    "category": "utilities",
+    "scope": "building",
+    "en": "Backup power",
+    "ru": "Резервное электропитание",
+    "definition": "An alternative power supply for some circuits.",
+    "note": "Record covered circuits and duration; do not promise whole-unit continuity."
+  },
+  {
+    "id": "solar_generation",
+    "category": "utilities",
+    "scope": "building",
+    "en": "Solar electricity",
+    "ru": "Солнечная генерация",
+    "definition": "Photovoltaic electricity generation at the property.",
+    "note": "Separate from solar water heating; capacity may be unknown."
+  },
+  {
+    "id": "water_storage",
+    "category": "utilities",
+    "scope": "building",
+    "en": "Water storage",
+    "ru": "Резервуар воды",
+    "definition": "Water-storage capacity explicitly described for the building.",
+    "note": "Storage alone does not establish potability or guaranteed supply."
+  },
+  {
+    "id": "internet_service",
+    "category": "utilities",
+    "scope": "service",
+    "en": "Internet service",
+    "ru": "Интернет",
+    "definition": "An offered internet connection or service.",
+    "note": "Do not infer included subscription, speed or availability in every unit."
+  },
+  {
+    "id": "air_conditioning",
+    "category": "unit",
+    "scope": "unit",
+    "en": "Air conditioning",
+    "ru": "Кондиционер",
+    "definition": "Air-conditioning equipment provided in the unit.",
+    "note": "Record rooms, included installation and condition separately."
+  },
+  {
+    "id": "balcony",
+    "category": "unit",
+    "scope": "unit",
+    "en": "Balcony",
+    "ru": "Балкон",
+    "definition": "An exterior platform associated with the unit.",
+    "note": "Do not infer usable area or combine it with internal floor area."
+  },
+  {
+    "id": "terrace",
+    "category": "unit",
+    "scope": "unit",
+    "en": "Terrace",
+    "ru": "Терраса",
+    "definition": "An exterior terrace associated with the unit.",
+    "note": "Distinguish private access from common roof or podium space."
+  },
+  {
+    "id": "private_garden",
+    "category": "unit",
+    "scope": "unit",
+    "en": "Private garden",
+    "ru": "Личный сад",
+    "definition": "Garden space explicitly allocated for private use.",
+    "note": "Exclusive use is not proof of land ownership."
+  },
+  {
+    "id": "laundry_room",
+    "category": "services",
+    "scope": "building",
+    "en": "Laundry room",
+    "ru": "Прачечная",
+    "definition": "A shared room with laundry facilities.",
+    "note": "Does not imply free use, serviced laundry or an in-unit washing machine."
+  },
+  {
+    "id": "washing_machine",
+    "category": "unit",
+    "scope": "unit",
+    "en": "Washing machine",
+    "ru": "Стиральная машина",
+    "definition": "A washing machine explicitly provided in the unit.",
+    "note": "Do not map communal laundry to this code."
+  },
+  {
+    "id": "pet_policy",
+    "category": "services",
+    "scope": "service",
+    "en": "Pet policy",
+    "ru": "Правила содержания животных",
+    "definition": "A documented policy governing animals at the property.",
+    "note": "This code does not itself mean pets are allowed; retain actual policy text."
+  },
+  {
+    "id": "beach_access",
+    "category": "location",
+    "scope": "site",
+    "en": "Direct beach access",
+    "ru": "Прямой выход к пляжу",
+    "definition": "An explicit route from the property directly to a beach.",
+    "note": "Not equivalent to sea view, beachfront wording or legal access rights."
+  },
+  {
+    "id": "sea_view",
+    "category": "unit",
+    "scope": "unit",
+    "en": "Sea view",
+    "ru": "Вид на море",
+    "definition": "A claimed view of the sea from the specified unit.",
+    "note": "Record viewpoint and obstruction; does not mean beach access."
+  },
+  {
+    "id": "rooftop_common_area",
+    "category": "leisure",
+    "scope": "building",
+    "en": "Shared rooftop area",
+    "ru": "Общая зона на крыше",
+    "definition": "Roof space offered for shared use.",
+    "note": "Does not imply a pool, bar, private terrace or unrestricted access."
+  },
+  {
+    "id": "restaurant",
+    "category": "services",
+    "scope": "site",
+    "en": "Restaurant",
+    "ru": "Ресторан",
+    "definition": "A restaurant explicitly located within the site.",
+    "note": "Do not infer included meals, ownership or permanent operation."
+  },
+  {
+    "id": "shuttle",
+    "category": "mobility",
+    "scope": "service",
+    "en": "Shuttle service",
+    "ru": "Трансфер",
+    "definition": "A scheduled or on-demand transport service.",
+    "note": "Record route, frequency, eligibility and fees instead of assuming them."
+  },
+  {
+    "id": "parcel_storage",
+    "category": "services",
+    "scope": "building",
+    "en": "Parcel storage",
+    "ru": "Хранение посылок",
+    "definition": "Designated parcel receipt or storage provision.",
+    "note": "Does not imply 24-hour collection or acceptance of valuables."
+  }
+]

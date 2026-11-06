@@ -1,0 +1,81 @@
+language,alias_text,amenity_id
+en,Swimming pool,pool
+ru,Бассейн,pool
+en,Children's pool,children_pool
+ru,Детский бассейн,children_pool
+en,Gym,gym
+en,Fitness room,gym
+ru,Тренажёрный зал,gym
+ru,Фитнес-зал,gym
+en,Sauna,sauna
+ru,Сауна,sauna
+en,Steam room,steam_room
+ru,Паровая комната,steam_room
+en,Playground,playground
+ru,Детская площадка,playground
+en,Children's playroom,playroom
+ru,Детская игровая комната,playroom
+en,Coworking space,coworking
+ru,Коворкинг,coworking
+en,Meeting room,meeting_room
+ru,Переговорная,meeting_room
+en,Parking,parking
+ru,Парковка,parking
+en,Covered parking,covered_parking
+ru,Крытая парковка,covered_parking
+en,EV charging,ev_charging
+ru,Зарядка электромобилей,ev_charging
+en,Bicycle storage,bicycle_storage
+ru,Хранение велосипедов,bicycle_storage
+en,Lift,lift
+en,Elevator,lift
+ru,Лифт,lift
+ru,Пассажирский лифт,lift
+en,Step-free entrance,step_free_entrance
+ru,Вход без ступеней,step_free_entrance
+en,Concierge,concierge
+ru,Консьерж,concierge
+en,Reception desk,reception
+ru,Стойка ресепшен,reception
+en,Security staff,security_staff
+ru,Охрана,security_staff
+en,CCTV,cctv
+ru,Видеонаблюдение,cctv
+en,Controlled entry,controlled_entry
+en,Video surveillance,controlled_entry
+ru,Контроль доступа,controlled_entry
+ru,Камеры наблюдения,controlled_entry
+en,Backup power,backup_power
+ru,Резервное электропитание,backup_power
+en,Solar electricity,solar_generation
+ru,Солнечная генерация,solar_generation
+en,Water storage,water_storage
+ru,Резервуар воды,water_storage
+en,Internet service,internet_service
+ru,Интернет,internet_service
+en,Air conditioning,air_conditioning
+ru,Кондиционер,air_conditioning
+en,Balcony,balcony
+ru,Балкон,balcony
+en,Terrace,terrace
+ru,Терраса,terrace
+en,Private garden,private_garden
+ru,Личный сад,private_garden
+en,Laundry room,laundry_room
+ru,Прачечная,laundry_room
+en,Washing machine,washing_machine
+ru,Стиральная машина,washing_machine
+en,Pet policy,pet_policy
+ru,Правила содержания животных,pet_policy
+en,Direct beach access,beach_access
+ru,Прямой выход к пляжу,beach_access
+en,Sea view,sea_view
+ru,Вид на море,sea_view
+en,Shared rooftop area,rooftop_common_area
+ru,Общая зона на крыше,rooftop_common_area
+en,Restaurant,restaurant
+ru,Ресторан,restaurant
+en,Shuttle service,shuttle
+ru,Трансфер,shuttle
+en,Parcel storage,parcel_storage
+ru,Хранение посылок,parcel_storage
